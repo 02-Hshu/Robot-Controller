@@ -1,0 +1,120 @@
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\bin\Release\ArraySDK_Example.exe.config
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.FormProbes.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.Properties.Resources.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlDepth.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlGrayScale.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlPlusMinus.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlScan.resources
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.GenerateResource.Cache
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+C:\Users\ritaq\Documents\Uscan_Files\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojResolveAssemblyReference.cache
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\bin\Release\ArraySDK_Example.exe.config
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.FormProbes.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.Properties.Resources.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlDepth.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlGrayScale.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlPlusMinus.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\SDK_Example.UserControlScan.resources
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.GenerateResource.Cache
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CoreCompileInputs.cache
+F:\Documents\selkerDesignResearch\ultrascanguide\ritacode\ArraySDKNov2017\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.exe.config
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\SDK_Example.FormProbes.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.Properties.Resources.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlDepth.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlGrayScale.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlPlusMinus.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlScan.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.GenerateResource.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CoreCompileInputs.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\ArraySDK_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.xml
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.exe.config
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.xml
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\SDK_Example.FormProbes.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.Properties.Resources.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlDepth.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlGrayScale.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlPlusMinus.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\SDK_Example.UserControlScan.resources
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.GenerateResource.cache
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CoreCompileInputs.cache
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
+C:\Users\jeffg\Documents\GUI_Controller\GUI_Ctrl_Build_Off_Original\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\bin\Release\ArraySDK_Example.exe.config
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\bin\Release\ArraySDK_Example.xml
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\ArraySDK_Example.Properties.Resources.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\SDK_Example.UserControlDepth.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\SDK_Example.UserControlGrayScale.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\SDK_Example.UserControlPlusMinus.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\SDK_Example.UserControlScan.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.GenerateResource.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CoreCompileInputs.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\bin\Release\ArraySDK_Example.exe.config
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\bin\Release\ArraySDK_Example.xml
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.Properties.Resources.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.UserControlDepth.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.UserControlGrayScale.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.UserControlPlusMinus.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.UserControlScan.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.GenerateResource.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CoreCompileInputs.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.formFoot.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\bin\Release\ArraySDK_Example.exe.config
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\bin\Release\ArraySDK_Example.xml
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\ArraySDK_Example.formFoot.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\ArraySDK_Example.Properties.Resources.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\SDK_Example.UserControlDepth.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\SDK_Example.UserControlGrayScale.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\SDK_Example.UserControlPlusMinus.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\SDK_Example.UserControlScan.resources
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.GenerateResource.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CoreCompileInputs.cache
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
+C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Stable\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
