@@ -495,14 +495,14 @@ namespace SDK_Example
 
             /// NewImageTick Event handler; event raised when image ready to be displayed
 
-            // Scan2D.NewImageTick += new IntersonArray.Imaging.Capture.NewImageHandler(ImageRefresh);
+            Scan2D.NewImageTick += new IntersonArray.Imaging.Capture.NewImageHandler(ImageRefresh);
             // Our own custom timer instead of Interson's timer
-            System.Windows.Forms.Timer timerImage = null;
-            timerImage = new System.Windows.Forms.Timer();
-            timerImage.Tick += new EventHandler(ImageRefresh);
-            timerImage.Interval = 1;
-            timerImage.Enabled = true;
-            timerImage.Start();
+            // System.Windows.Forms.Timer timerImage = null;
+            // timerImage = new System.Windows.Forms.Timer();
+            // timerImage.Tick += new EventHandler(ImageRefresh);
+            // timerImage.Interval = 1;
+            // timerImage.Enabled = true;
+            // timerImage.Start();
 
             Scan2D.FrameAvg = true; //Enable/Disable Frame Averaging. Default is true.
 
@@ -1553,7 +1553,7 @@ namespace SDK_Example
                 }
 
                 // Only refresh every 16 ticks while scanning to save processing
-                if (RobotState != RobotStateEnum.scanning || curStepPos % 16 == 0) {
+                if (RobotState != RobotStateEnum.scanning || curStepPos % 2 == 0) {
                     DoRefresh();
                 }
 

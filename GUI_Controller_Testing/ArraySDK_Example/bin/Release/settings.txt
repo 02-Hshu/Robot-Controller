@@ -1,7 +1,9 @@
- Depth 0
+ Depth 120
  Frequency 1
- High_Volt0
+ High_Volt3
  Focus 1
  Main_Gain 0.00
  Dynamic_Gain 7
- Doubler False
+ Doubler True
+ Compound False
+ Steering 0
