@@ -1522,7 +1522,7 @@ namespace SDK_Example
                     Array.Copy(bytRawImage, bytRawImagePrevious, uiNbOfLines * ScanConverter.MAX_SAMPLES);
                     Array.Copy(bytRawImageRef, bytRawImage, uiNbOfLines * ScanConverter.MAX_SAMPLES);
                     // Console.WriteLine("previous step position: " + prevStepPos);
-                    if (prevStepPos < curStepPos) { 
+                    if (prevStepPos < curStepPos) {
                         AddToCine(bytRawImage); //B
                         prevStepPos++;
                     }
@@ -1553,7 +1553,7 @@ namespace SDK_Example
                 }
 
                 // Only refresh every 16 ticks while scanning to save processing
-                if (RobotState != RobotStateEnum.scanning || curStepPos % 2 == 0) {
+                if (RobotState != RobotStateEnum.scanning || curStepPos % 16 == 0) {
                     DoRefresh();
                 }
 
