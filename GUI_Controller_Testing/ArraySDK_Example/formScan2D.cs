@@ -121,7 +121,7 @@ namespace SDK_Example
         // This MUST be the same as the TrackBarCine Maximum in Properties
 
         int iCineCounter = 0; /// current index of the loop
-        int MaxCine = 512;     /// Number of Images saved in the loop
+        int MaxCine = 1024;     /// Number of Images saved in the loop
         bool bCineOn = false; /// Play/Stop
         List<Byte[,]> ByteArrayList = new List<Byte[,]>(); /// Container of the Cineloop
 
@@ -3469,19 +3469,19 @@ namespace SDK_Example
                 RobotState = RobotStateEnum.rewinding;
                 SetButtonForRobotState(RobotState);
 
-                MaxCine = maxSteps;
+                // MaxCine = maxSteps;
                 /// Cineloop
-                ByteArrayList.Clear();
-                ByteArrayList.Capacity = MaxCine;
-                ushortArrayList.Clear();
-                ushortArrayList.Capacity = MaxCine;
-                ByteUniArrayList.Clear();
-                ByteUniArrayList.Capacity = MaxCine;
-                ushortUniArrayList.Clear();
-                ushortUniArrayList.Capacity = MaxCine;
+                // ByteArrayList.Clear();
+                // ByteArrayList.Capacity = MaxCine;
+                // ushortArrayList.Clear();
+                // ushortArrayList.Capacity = MaxCine;
+                // ByteUniArrayList.Clear();
+                // ByteUniArrayList.Capacity = MaxCine;
+                // ushortUniArrayList.Clear();
+                // ushortUniArrayList.Capacity = MaxCine;
                 //for UScanGuide Labeling? 
-                cineImageTimes = new DateTime[MaxCine];
-                cineStepCount = new int[MaxCine];
+                // cineImageTimes = new DateTime[MaxCine];
+                // cineStepCount = new int[MaxCine];
 
             }
 
