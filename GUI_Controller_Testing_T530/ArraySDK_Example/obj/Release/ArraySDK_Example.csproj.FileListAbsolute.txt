@@ -169,3 +169,4 @@ C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing_T
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing_T530\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing_T530\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing_T530\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing_T530\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
