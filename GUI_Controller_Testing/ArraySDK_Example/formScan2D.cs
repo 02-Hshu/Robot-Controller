@@ -121,7 +121,7 @@ namespace SDK_Example
         // This MUST be the same as the TrackBarCine Maximum in Properties
 
         int iCineCounter = 0; /// current index of the loop
-        int MaxCine = 1024;     /// Number of Images saved in the loop
+        int MaxCine = 512;     /// Number of Images saved in the loop
         bool bCineOn = false; /// Play/Stop
         List<Byte[,]> ByteArrayList = new List<Byte[,]>(); /// Container of the Cineloop
 
@@ -1524,9 +1524,10 @@ namespace SDK_Example
                     // Console.WriteLine("previous step position: " + prevStepPos);
                     if (prevStepPos < curStepPos) {
 
-                        if (curStepPos % 2 == 0) { // Take a scan every 2 steps
-                            AddToCine(bytRawImage); //B
-                        }
+                        // if (curStepPos % 2 == 0) { // Take a scan every 2 steps
+                        //     AddToCine(bytRawImage); //B
+                        // }
+                        AddToCine(bytRawImage); // Takes a scan every step
                         prevStepPos++;
                     }
                     ApplyTgc(bytRawImage);      //B
@@ -3479,7 +3480,7 @@ namespace SDK_Example
                 // ByteUniArrayList.Capacity = MaxCine;
                 // ushortUniArrayList.Clear();
                 // ushortUniArrayList.Capacity = MaxCine;
-                //for UScanGuide Labeling? 
+                // for UScanGuide Labeling? 
                 // cineImageTimes = new DateTime[MaxCine];
                 // cineStepCount = new int[MaxCine];
 
