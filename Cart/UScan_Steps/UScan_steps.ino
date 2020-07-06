@@ -15,6 +15,7 @@
 #define MOTOR_STEPS 200
 #define MIN_RPM 120
 #define RPM 120
+#define RPM_SCANNING 30
 #define MICROSTEPS 1
 #define LARGE_NUM 200000
 
@@ -203,7 +204,7 @@ void state_machine() {
       if (motor_flag) {  						// start motor forward
         stepper.enable();
         // stepper.setRPM(rpm);
-        stepper.setRPM(RPM / 4);    // 30 rpm
+        stepper.setRPM(RPM_SCANNING);
         stepper.startMove(LARGE_NUM);
         motor_flag = 0;
       }
@@ -279,13 +280,14 @@ void loop() {
   }
   // (optional) execute other code if we have enough time
   if (wait_time_micros > 100) {
-    //    	if (state == REWINDING){ step_count--;};
-    //    	if (state == SCANNING || HOMING) { step_count++;};
-    step_count++;
-    if (step_count % 10 == 0 && ((state == SCANNING) || (state == REWINDING))) {
-      toggle_led();
-      Serial.write(0x50); //tell computer we took a step (1/2 rotation)
-    }
+      //    	if (state == REWINDING){ step_count--;};
+      //    	if (state == SCANNING || HOMING) { step_count++;};
+      step_count++;
+      
+      if (step_count % 10 == 0 && ((state == SCANNING) || (state == REWINDING))) {
+        toggle_led();
+        Serial.write(0x50); //tell computer we took a step (1/2 rotation)
+      }
   }
 
   /*
