@@ -1,8 +1,14 @@
-/*
+/*************************************************************************************/
+/* Ultrascanguide robot motor controller    2015 - 2020                              */
+/* contributors: Rita Kambil,  Austin Poteet, Hang Shu, Ted Selker                   */
+/* Early versions used an optical encoder,                                           */
+ * 
+ *//*
  * Generic Stepper Motor Driver Driver
  * Indexer mode only.
 
  * Copyright (C)2015-2017 Laurentiu Badea
+ *
  *
  * This file may be redistributed under the terms of the MIT license.
  * A copy of this license has been included with this distribution in the file LICENSE.
@@ -11,6 +17,7 @@
  * - Generating stepper-motor speed profiles in real time - David Austin, 2004
  * - Atmel AVR446: Linear speed control of stepper motor, 2006
  */
+ 
 #include "BasicStepperDriver.h"
 
 /*
