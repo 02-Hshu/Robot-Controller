@@ -1,8 +1,11 @@
-/*
+
+ * 
+ *//*
  * Generic Stepper Motor Driver Driver
  * Indexer mode only.
 
  * Copyright (C)2015-2017 Laurentiu Badea
+ *
  *
  * This file may be redistributed under the terms of the MIT license.
  * A copy of this license has been included with this distribution in the file LICENSE.
@@ -11,10 +14,11 @@
  * - Generating stepper-motor speed profiles in real time - David Austin, 2004
  * - Atmel AVR446: Linear speed control of stepper motor, 2006
  */
+ 
 #include "BasicStepperDriver.h"
 
 /*
- * Basic connection: only DIR, STEP are connected.
+ * Basic connection: only DIR, STEP are connected.  
  * Microstepping controls should be hardwired.
  */
 BasicStepperDriver::BasicStepperDriver(short steps, short dir_pin, short step_pin)

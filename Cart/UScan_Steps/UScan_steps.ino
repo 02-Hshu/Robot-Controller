@@ -1,3 +1,13 @@
+/*************************************************************************************/
+/* Ultrascanguide robot motor controller    2015 - 2020                              */
+/* contributors: Rita Kambil,  Austin Poteet, Hang Shu, Ted Selker                   */
+/* Stepper motor steps are used as  distance, early versions used an optical encoder */
+/* pin 56 stepper, 9,10 limit switches, 11 stop button 12 possible speaker           */
+/* 1oop calls state nmachine, calls stepper driver   to setup, run and change stuff  */
+/* find limits and count steps to tell SDK scan lengths                              */
+/*wait for commands forward, reverse, scan                                           */
+/*************************************************************************************/
+
 #include "PinChangeInt.h"
 #include "Arduino.h"
 #include "BasicStepperDriver.h" // generic
@@ -30,19 +40,19 @@ const int manual_fwd = 2;   // manual forward switch
 const int manual_bwd = 3;   // manual backward switch
 const int enable_pin = 4;
 const int dir_pin = 5;			// stepper direction
-const int step_pin = 6;			// stepper pin
-const int opt_encoder = 8;  // optical encoder pin
+const int step_pin = 6;			// stepper step  
+const int opt_encoder = 8;  // optical encoder pin                                /*currently unused feature */
 const int limit_1 = 9;      // limit switch 1 blue (the switch on the left)
 const int limit_2 = 10;     // limit switch 2 red (the switch on the right)
-const int speaker = 12;
+const int speaker = 12;                                                          /*currently unused feature */
 
-int write_flag = 0;         // tells the Arduino when to call Serial.write() and send information to ArraySDK; if to 1 (checks in a conditional statement), there will be a Serial.write() call
+int write_flag = 0;         // tells Arduino to call Serial.write() send information to ArraySDK; if  1 
 int motor_flag = 0;         
-int home_flag_1 = 0;        // if set to 1, means that robot has hit the right switch
-int home_flag_2 = 0;        // if set to 1, means that robot has hit the left switch
+int home_flag_1 = 0;        // if set to 1,  robot has hit the right limit
+int home_flag_2 = 0;        // if set to 1, robot has hit the left limit
 int led = 0;
 int step_count = 0;
-int rpm = RPM;
+int rpm = RPM;              //maximium rpm for homing,  scan is RPM/4
 char buf[100];
 
 static unsigned long last_interrupt_time = 0;
