@@ -284,7 +284,7 @@ void loop() {
       //    	if (state == SCANNING || HOMING) { step_count++;};
       step_count++;
       
-      if (step_count % 10 == 0 && ((state == SCANNING) || (state == REWINDING))) {
+      if (step_count % 10 == 0 && ((state == SCANNING) || (state == REWINDING) || (state == HOMING))) {
         toggle_led();
         Serial.write(0x50); //tell computer we took a step (1/2 rotation)
       }

@@ -3365,7 +3365,8 @@ namespace SDK_Example
 
                     if (b == 0x50)
                     {
-                        Console.WriteLine("homeCountSteps: " + homeCountSteps);
+                        // Console.WriteLine("homeCountSteps: " + homeCountSteps);
+                        Console.WriteLine("RobotState: " + RobotState);
                         if (RobotState == RobotStateEnum.homing && homeCountSteps)
                         {
                             ++maxSteps;
@@ -3467,7 +3468,6 @@ namespace SDK_Example
             //Homing pt 2, stop counting the steps and store max steps, received 0x41
             else if (b == 0x41)
             {
-                homeCountSteps = false;
                 // Debug.Write(" max steps: " + maxSteps);
                 RobotState = RobotStateEnum.rewinding;
                 SetButtonForRobotState(RobotState);
