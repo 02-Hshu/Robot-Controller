@@ -495,14 +495,14 @@ namespace SDK_Example
 
             /// NewImageTick Event handler; event raised when image ready to be displayed
 
-            Scan2D.NewImageTick += new IntersonArray.Imaging.Capture.NewImageHandler(ImageRefresh);
+            // Scan2D.NewImageTick += new IntersonArray.Imaging.Capture.NewImageHandler(ImageRefresh);
             // Our own custom timer instead of Interson's timer
-            // System.Windows.Forms.Timer timerImage = null;
-            // timerImage = new System.Windows.Forms.Timer();
-            // timerImage.Tick += new EventHandler(ImageRefresh);
-            // timerImage.Interval = 1;
-            // timerImage.Enabled = true;
-            // timerImage.Start();
+            System.Windows.Forms.Timer timerImage = null;
+            timerImage = new System.Windows.Forms.Timer();
+            timerImage.Tick += new EventHandler(ImageRefresh);
+            timerImage.Interval = 150;
+            timerImage.Enabled = true;
+            timerImage.Start();
 
             Scan2D.FrameAvg = true; //Enable/Disable Frame Averaging. Default is true.
 
@@ -3365,9 +3365,11 @@ namespace SDK_Example
 
                     if (b == 0x50)
                     {
+                        Console.WriteLine("homeCountSteps: " + homeCountSteps);
                         if (RobotState == RobotStateEnum.homing && homeCountSteps)
                         {
                             ++maxSteps;
+                            Console.WriteLine("maxSteps has been incremented");
                         }
                         else if (RobotState == RobotStateEnum.scanning)
                         {
@@ -3470,19 +3472,21 @@ namespace SDK_Example
                 RobotState = RobotStateEnum.rewinding;
                 SetButtonForRobotState(RobotState);
 
-                // MaxCine = maxSteps;
+                MaxCine = maxSteps;
+                Console.WriteLine(maxSteps);
+
                 /// Cineloop
-                // ByteArrayList.Clear();
-                // ByteArrayList.Capacity = MaxCine;
-                // ushortArrayList.Clear();
-                // ushortArrayList.Capacity = MaxCine;
-                // ByteUniArrayList.Clear();
-                // ByteUniArrayList.Capacity = MaxCine;
-                // ushortUniArrayList.Clear();
-                // ushortUniArrayList.Capacity = MaxCine;
+                ByteArrayList.Clear();
+                ByteArrayList.Capacity = MaxCine;
+                ushortArrayList.Clear();
+                ushortArrayList.Capacity = MaxCine;
+                ByteUniArrayList.Clear();
+                ByteUniArrayList.Capacity = MaxCine;
+                ushortUniArrayList.Clear();
+                ushortUniArrayList.Capacity = MaxCine;
                 // for UScanGuide Labeling? 
-                // cineImageTimes = new DateTime[MaxCine];
-                // cineStepCount = new int[MaxCine];
+                cineImageTimes = new DateTime[MaxCine];
+                cineStepCount = new int[MaxCine];
 
             }
 
@@ -3560,6 +3564,10 @@ namespace SDK_Example
                     buttonRobotScan.Enabled = true;
                     labelRobotState.Text = "Scanning";
                     robotStateIndicator.Load("Images/scanning.png");
+
+                    FormCamera cam = new FormCamera();
+                    cam.Show();
+
                     break;
                 case RobotStateEnum.endOfTravel:
                     buttonRobotScan.Enabled = true;

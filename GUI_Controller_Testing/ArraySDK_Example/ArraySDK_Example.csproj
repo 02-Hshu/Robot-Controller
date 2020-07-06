@@ -62,6 +62,18 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\Camera Application DLL\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\Camera Application DLL\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\Camera Application DLL\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DarrenLee.Media">
+      <HintPath>..\..\Camera Application DLL\DarrenLee.Media.dll</HintPath>
+    </Reference>
     <Reference Include="IntersonArray, Version=2.0.6494.28731, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Librairies\IntersonArray.dll</HintPath>
@@ -93,6 +105,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCamera.Designer.cs">
+      <DependentUpon>FormCamera.cs</DependentUpon>
+    </Compile>
     <Compile Include="formFoot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +132,9 @@
     <Compile Include="MessageClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCamera.resx">
+      <DependentUpon>FormCamera.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formFoot.resx">
       <DependentUpon>formFoot.cs</DependentUpon>
     </EmbeddedResource>

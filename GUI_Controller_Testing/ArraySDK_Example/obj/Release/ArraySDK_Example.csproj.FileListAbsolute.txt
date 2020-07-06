@@ -139,6 +139,12 @@ C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\A
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Release\ArraySDK_Example.xml
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Release\ArraySDK_Example.exe
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Release\ArraySDK_Example.pdb
+C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Release\AForge.dll
+C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Release\AForge.Video.DirectShow.dll
+C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Release\AForge.Video.dll
+C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Release\DarrenLee.Media.dll
+C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
+C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.FormCamera.resources
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.formFoot.resources
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.FormMessage.resources
 C:\Users\Jeff\Documents\GUI Controller\Robot_Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\SDK_Example.formScan2D.resources
