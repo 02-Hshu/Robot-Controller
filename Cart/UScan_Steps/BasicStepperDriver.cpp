@@ -1,7 +1,4 @@
-/*************************************************************************************/
-/* Ultrascanguide robot motor controller    2015 - 2020                              */
-/* contributors: Rita Kambil,  Austin Poteet, Hang Shu, Ted Selker                   */
-/* Early versions used an optical encoder,                                           */
+
  * 
  *//*
  * Generic Stepper Motor Driver Driver
@@ -21,7 +18,7 @@
 #include "BasicStepperDriver.h"
 
 /*
- * Basic connection: only DIR, STEP are connected.
+ * Basic connection: only DIR, STEP are connected.  
  * Microstepping controls should be hardwired.
  */
 BasicStepperDriver::BasicStepperDriver(short steps, short dir_pin, short step_pin)
