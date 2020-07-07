@@ -1,12 +1,19 @@
-/*************************************************************************************/
-/* Ultrascanguide robot motor controller    2015 - 2020                              */
-/* contributors: Rita Kambil,  Austin Poteet, Hang Shu, Ted Selker                   */
-/* Stepper motor steps are used as  distance, early versions used an optical encoder */
-/* pin 56 stepper, 9,10 limit switches, 11 stop button 12 possible speaker           */
-/* 1oop calls state nmachine, calls stepper driver   to setup, run and change stuff  */
-/* find limits and count steps to tell SDK scan lengths                              */
-/*wait for commands forward, reverse, scan                                           */
-/*************************************************************************************/
+/* Ultrascanguide robot motor controller    2015 - 2020 
+ * contributors: Rita Kambil,  Austin Poteet, Hang Shu, Ted Selker
+ * Stepper motor steps are used as  distance, early versions used an optical encoder 
+ * pin 56 stepper, 9,10 limitwitches, 11 stop button 12 possible speaker 
+ * 1oop calls state nmachine, calls stepper driver   to setup, run and change stuff 
+ * find limits and count steps to tell SDK sca sn lengths  
+ * wait for commands forward, reverse, scan  
+ * 
+ * Codes that the Arduino sends to ArraySDK
+ * 0x50: Took a step (1/10 of a rotation)
+ * 0x4D: Robot is ready to scan
+ * 0x42: Homing part 1, start counting the steps
+ * 0x47: Emergency stop
+ * 0x41: Homing part 2, stop counting steps
+ * 0x4B: Completed scan
+ */
 
 #include "PinChangeInt.h"
 #include "Arduino.h"
@@ -296,7 +303,7 @@ void loop() {
       
       if (step_count % 10 == 0 && ((state == SCANNING) || (state == REWINDING) || (state == HOMING))) {
         toggle_led();
-        Serial.write(0x50); //tell computer we took a step (1/2 rotation)
+        Serial.write(0x50); //tell computer we took a step (1/10 rotation)
       }
   }
 
