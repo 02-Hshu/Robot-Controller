@@ -179,3 +179,4 @@ C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Exampl
 C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.csproj.CopyComplete
 C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.exe
 C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.pdb
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Release\ArraySDK_Example.csprojAssemblyReference.cache
