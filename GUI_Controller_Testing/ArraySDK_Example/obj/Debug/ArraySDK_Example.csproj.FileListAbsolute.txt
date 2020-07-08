@@ -80,3 +80,24 @@ C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing
 C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.csproj.CopyComplete
 C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.exe
 C:\Users\Jeff\Documents\GUI Controller\Build_Off_Original\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.pdb
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Debug\ArraySDK_Example.exe.config
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Debug\ArraySDK_Example.exe
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Debug\ArraySDK_Example.pdb
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Debug\AForge.dll
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Debug\AForge.Video.dll
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\bin\Debug\DarrenLee.Media.dll
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.csprojAssemblyReference.cache
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.FormCamera.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.formFoot.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\SDK_Example.FormMessage.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\SDK_Example.formScan2D.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.Properties.Resources.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\SDK_Example.UserControlDepth.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\SDK_Example.UserControlGrayScale.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\SDK_Example.UserControlPlusMinus.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\SDK_Example.UserControlScan.resources
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.csproj.GenerateResource.cache
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.csproj.CopyComplete
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.exe
+C:\Users\02jsh\Documents\Robot-Controller\GUI_Controller_Testing\ArraySDK_Example\obj\Debug\ArraySDK_Example.pdb

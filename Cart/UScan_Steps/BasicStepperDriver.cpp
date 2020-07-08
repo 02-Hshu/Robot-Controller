@@ -1,6 +1,4 @@
-
- * 
- *//*
+/*
  * Generic Stepper Motor Driver Driver
  * Indexer mode only.
 

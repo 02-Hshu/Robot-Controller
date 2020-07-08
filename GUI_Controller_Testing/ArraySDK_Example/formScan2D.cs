@@ -495,14 +495,14 @@ namespace SDK_Example
 
             /// NewImageTick Event handler; event raised when image ready to be displayed
 
-            // Scan2D.NewImageTick += new IntersonArray.Imaging.Capture.NewImageHandler(ImageRefresh);
+            Scan2D.NewImageTick += new IntersonArray.Imaging.Capture.NewImageHandler(ImageRefresh);
             // Our own custom timer instead of Interson's timer
-            System.Windows.Forms.Timer timerImage = null;
-            timerImage = new System.Windows.Forms.Timer();
-            timerImage.Tick += new EventHandler(ImageRefresh);
-            timerImage.Interval = 150;
-            timerImage.Enabled = true;
-            timerImage.Start();
+            // System.Windows.Forms.Timer timerImage = null;
+            // timerImage = new System.Windows.Forms.Timer();
+            // timerImage.Tick += new EventHandler(ImageRefresh);
+            // timerImage.Interval = 150;
+            // timerImage.Enabled = true;
+            // timerImage.Start();
 
             Scan2D.FrameAvg = true; //Enable/Disable Frame Averaging. Default is true.
 
@@ -1501,6 +1501,8 @@ namespace SDK_Example
             }
         }
 
+        // int count_loop = 0;
+
         /// <summary>
         /// Capturing the current image.
         /// Calls DoRefresh to draw the graphics.
@@ -1521,7 +1523,13 @@ namespace SDK_Example
                 {
                     Array.Copy(bytRawImage, bytRawImagePrevious, uiNbOfLines * ScanConverter.MAX_SAMPLES);
                     Array.Copy(bytRawImageRef, bytRawImage, uiNbOfLines * ScanConverter.MAX_SAMPLES);
-                    // Console.WriteLine("previous step position: " + prevStepPos);
+                    
+                    // if (RobotState == RobotStateEnum.scanning)
+                    // {
+                        // Console.WriteLine("prevStepPos: " + prevStepPos);
+                        // Console.WriteLine("curStepPos: " + curStepPos);
+                    // }
+
                     if (prevStepPos < curStepPos) {
 
                         // if (curStepPos % 2 == 0) { // Take a scan every 2 steps
@@ -1529,6 +1537,13 @@ namespace SDK_Example
                         // }
                         AddToCine(bytRawImage); // Takes a scan every step
                         prevStepPos++;
+                        
+                        // count_loop++;
+                        // if (RobotState == RobotStateEnum.scanning)
+                        // {
+                            // Console.WriteLine("prevStepPos: " + prevStepPos);
+                            // Console.WriteLine("curStepPos: " + curStepPos);
+                        // }
                     }
                     ApplyTgc(bytRawImage);      //B
                                                 //if (bImgExt == true)
@@ -3366,11 +3381,11 @@ namespace SDK_Example
                     if (b == 0x50)
                     {
                         // Console.WriteLine("homeCountSteps: " + homeCountSteps);
-                        Console.WriteLine("RobotState: " + RobotState);
+                        // Console.WriteLine("RobotState: " + RobotState);
                         if (RobotState == RobotStateEnum.homing && homeCountSteps)
                         {
                             ++maxSteps;
-                            Console.WriteLine("maxSteps has been incremented");
+                            // Console.WriteLine("maxSteps has been incremented");
                         }
                         else if (RobotState == RobotStateEnum.scanning)
                         {
@@ -3472,8 +3487,9 @@ namespace SDK_Example
                 RobotState = RobotStateEnum.rewinding;
                 SetButtonForRobotState(RobotState);
 
+                
                 MaxCine = maxSteps;
-                Console.WriteLine(maxSteps);
+                Console.WriteLine("MaxSteps: " + maxSteps);
 
                 /// Cineloop
                 ByteArrayList.Clear();
@@ -3487,7 +3503,6 @@ namespace SDK_Example
                 // for UScanGuide Labeling? 
                 cineImageTimes = new DateTime[MaxCine];
                 cineStepCount = new int[MaxCine];
-
             }
 
             else if (RobotState == RobotStateEnum.unInitialized)
@@ -3554,6 +3569,9 @@ namespace SDK_Example
                     buttonRobotScan.Enabled = true;
                     labelRobotState.Text = "Ready to Scan";
                     robotStateIndicator.Load("Images/readyToScan.png");
+
+                    // FormCamera cam = new FormCamera();
+
                     break;
                 case RobotStateEnum.homing:
                     buttonRobotScan.Enabled = true;
@@ -3564,15 +3582,15 @@ namespace SDK_Example
                     buttonRobotScan.Enabled = true;
                     labelRobotState.Text = "Scanning";
                     robotStateIndicator.Load("Images/scanning.png");
-
-                    FormCamera cam = new FormCamera();
-                    cam.Show();
-
                     break;
                 case RobotStateEnum.endOfTravel:
                     buttonRobotScan.Enabled = true;
                     labelRobotState.Text = "End of Travel";
                     robotStateIndicator.Load("Images/endOfTravel.png");
+
+                    // Console.WriteLine("# of times prevStepPos < curStepPos: " + count_loop);
+                    // count_loop = 0;
+
                     break;
                 case RobotStateEnum.emergencyStopped:
                     buttonRobotScan.Enabled = true;
@@ -3893,7 +3911,7 @@ namespace SDK_Example
                 file.WriteLine("Number_Images: " + ByteArrayList.Count);
 
                 // Sweep angle
-                int stepsPerTick = 5;
+                int stepsPerTick = 10;
                 double degreesPerStep = 180.0 / 3102;
                 double sweepAngle = maxSteps * stepsPerTick * degreesPerStep;
                 int sweepAngleRounded = (int) Math.Round(sweepAngle);
@@ -4479,7 +4497,10 @@ namespace SDK_Example
                     ByteArrayList.Clear();
 
                     // Resets prevStepPos to the current position
-                    prevStepPos = curStepPos;
+                    // prevStepPos = curStepPos;
+                    prevStepPos = 0; 
+                    
+                    // Console.WriteLine("curStepPos at readytoscan: " + curStepPos);
 
                     StartRobot();
                     break;
