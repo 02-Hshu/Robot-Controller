@@ -117,11 +117,11 @@ namespace SDK_Example
             // 
             this.labelImaging.AutoSize = true;
             this.labelImaging.BackColor = System.Drawing.Color.Transparent;
-            this.labelImaging.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImaging.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelImaging.ForeColor = System.Drawing.Color.White;
             this.labelImaging.Location = new System.Drawing.Point(234, 596);
             this.labelImaging.Name = "labelImaging";
-            this.labelImaging.Size = new System.Drawing.Size(65, 16);
+            this.labelImaging.Size = new System.Drawing.Size(71, 16);
             this.labelImaging.TabIndex = 54;
             this.labelImaging.Text = "IMAGING";
             this.labelImaging.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,11 +142,11 @@ namespace SDK_Example
             // 
             // textRadius
             // 
-            this.textRadius.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textRadius.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textRadius.ForeColor = System.Drawing.Color.DimGray;
             this.textRadius.Location = new System.Drawing.Point(906, 95);
             this.textRadius.Name = "textRadius";
-            this.textRadius.Size = new System.Drawing.Size(220, 23);
+            this.textRadius.Size = new System.Drawing.Size(220, 22);
             this.textRadius.TabIndex = 0;
             this.textRadius.Text = "Enter the Radius";
             this.textRadius.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -156,7 +156,7 @@ namespace SDK_Example
             // labelDepth
             // 
             this.labelDepth.BackColor = System.Drawing.Color.Transparent;
-            this.labelDepth.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDepth.ForeColor = System.Drawing.Color.White;
             this.labelDepth.Location = new System.Drawing.Point(241, 748);
             this.labelDepth.Name = "labelDepth";
@@ -169,11 +169,11 @@ namespace SDK_Example
             // 
             this.labelFrequency.AutoSize = true;
             this.labelFrequency.BackColor = System.Drawing.Color.Transparent;
-            this.labelFrequency.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFrequency.ForeColor = System.Drawing.Color.White;
             this.labelFrequency.Location = new System.Drawing.Point(316, 748);
             this.labelFrequency.Name = "labelFrequency";
-            this.labelFrequency.Size = new System.Drawing.Size(67, 16);
+            this.labelFrequency.Size = new System.Drawing.Size(72, 16);
             this.labelFrequency.TabIndex = 27;
             this.labelFrequency.Text = "Frequency";
             this.labelFrequency.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -193,7 +193,7 @@ namespace SDK_Example
             // labelMainGain
             // 
             this.labelMainGain.BackColor = System.Drawing.Color.Transparent;
-            this.labelMainGain.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMainGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMainGain.ForeColor = System.Drawing.Color.White;
             this.labelMainGain.Location = new System.Drawing.Point(554, 748);
             this.labelMainGain.Name = "labelMainGain";
@@ -206,11 +206,11 @@ namespace SDK_Example
             // 
             this.labelHighVolt.AutoSize = true;
             this.labelHighVolt.BackColor = System.Drawing.Color.Transparent;
-            this.labelHighVolt.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHighVolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHighVolt.ForeColor = System.Drawing.Color.White;
             this.labelHighVolt.Location = new System.Drawing.Point(486, 748);
             this.labelHighVolt.Name = "labelHighVolt";
-            this.labelHighVolt.Size = new System.Drawing.Size(61, 16);
+            this.labelHighVolt.Size = new System.Drawing.Size(62, 16);
             this.labelHighVolt.TabIndex = 34;
             this.labelHighVolt.Text = "High Volt";
             this.labelHighVolt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -248,11 +248,11 @@ namespace SDK_Example
             // 
             this.labelFileName.AutoSize = true;
             this.labelFileName.BackColor = System.Drawing.Color.Transparent;
-            this.labelFileName.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFileName.ForeColor = System.Drawing.Color.White;
             this.labelFileName.Location = new System.Drawing.Point(208, 35);
             this.labelFileName.Name = "labelFileName";
-            this.labelFileName.Size = new System.Drawing.Size(63, 16);
+            this.labelFileName.Size = new System.Drawing.Size(75, 16);
             this.labelFileName.TabIndex = 39;
             this.labelFileName.Text = "FileName";
             this.labelFileName.Click += new System.EventHandler(this.LabelFileName_Click);
@@ -261,11 +261,11 @@ namespace SDK_Example
             // 
             this.labelDynamic.AutoSize = true;
             this.labelDynamic.BackColor = System.Drawing.Color.Transparent;
-            this.labelDynamic.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDynamic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDynamic.ForeColor = System.Drawing.Color.White;
             this.labelDynamic.Location = new System.Drawing.Point(647, 748);
             this.labelDynamic.Name = "labelDynamic";
-            this.labelDynamic.Size = new System.Drawing.Size(58, 16);
+            this.labelDynamic.Size = new System.Drawing.Size(61, 16);
             this.labelDynamic.TabIndex = 44;
             this.labelDynamic.Text = "Dynamic";
             this.labelDynamic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -275,11 +275,11 @@ namespace SDK_Example
             // 
             this.labelTgc3.AutoSize = true;
             this.labelTgc3.BackColor = System.Drawing.Color.Transparent;
-            this.labelTgc3.Font = new System.Drawing.Font("Lato", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTgc3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTgc3.ForeColor = System.Drawing.Color.White;
             this.labelTgc3.Location = new System.Drawing.Point(1109, 711);
             this.labelTgc3.Name = "labelTgc3";
-            this.labelTgc3.Size = new System.Drawing.Size(21, 13);
+            this.labelTgc3.Size = new System.Drawing.Size(22, 13);
             this.labelTgc3.TabIndex = 56;
             this.labelTgc3.Text = "Far";
             // 
@@ -287,11 +287,11 @@ namespace SDK_Example
             // 
             this.labelTgc2.AutoSize = true;
             this.labelTgc2.BackColor = System.Drawing.Color.Transparent;
-            this.labelTgc2.Font = new System.Drawing.Font("Lato", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTgc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTgc2.ForeColor = System.Drawing.Color.White;
             this.labelTgc2.Location = new System.Drawing.Point(1094, 657);
             this.labelTgc2.Name = "labelTgc2";
-            this.labelTgc2.Size = new System.Drawing.Size(41, 13);
+            this.labelTgc2.Size = new System.Drawing.Size(38, 13);
             this.labelTgc2.TabIndex = 55;
             this.labelTgc2.Text = "Middle";
             // 
@@ -299,7 +299,7 @@ namespace SDK_Example
             // 
             this.labelTgc1.AutoSize = true;
             this.labelTgc1.BackColor = System.Drawing.Color.Transparent;
-            this.labelTgc1.Font = new System.Drawing.Font("Lato", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTgc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTgc1.ForeColor = System.Drawing.Color.White;
             this.labelTgc1.Location = new System.Drawing.Point(1102, 603);
             this.labelTgc1.Name = "labelTgc1";
@@ -312,11 +312,11 @@ namespace SDK_Example
             // 
             this.labelFocus.AutoSize = true;
             this.labelFocus.BackColor = System.Drawing.Color.Transparent;
-            this.labelFocus.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFocus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFocus.ForeColor = System.Drawing.Color.White;
             this.labelFocus.Location = new System.Drawing.Point(402, 748);
             this.labelFocus.Name = "labelFocus";
-            this.labelFocus.Size = new System.Drawing.Size(40, 16);
+            this.labelFocus.Size = new System.Drawing.Size(45, 16);
             this.labelFocus.TabIndex = 46;
             this.labelFocus.Text = "Focus";
             this.labelFocus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -366,11 +366,11 @@ namespace SDK_Example
             // 
             this.labelSaveReview.AutoSize = true;
             this.labelSaveReview.BackColor = System.Drawing.Color.Transparent;
-            this.labelSaveReview.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSaveReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSaveReview.ForeColor = System.Drawing.Color.White;
             this.labelSaveReview.Location = new System.Drawing.Point(765, 338);
             this.labelSaveReview.Name = "labelSaveReview";
-            this.labelSaveReview.Size = new System.Drawing.Size(94, 16);
+            this.labelSaveReview.Size = new System.Drawing.Size(112, 16);
             this.labelSaveReview.TabIndex = 58;
             this.labelSaveReview.Text = "SAVE/REVIEW";
             this.labelSaveReview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -380,11 +380,11 @@ namespace SDK_Example
             // 
             this.labelRobotCtrls.AutoSize = true;
             this.labelRobotCtrls.BackColor = System.Drawing.Color.Transparent;
-            this.labelRobotCtrls.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRobotCtrls.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRobotCtrls.ForeColor = System.Drawing.Color.White;
             this.labelRobotCtrls.Location = new System.Drawing.Point(765, 73);
             this.labelRobotCtrls.Name = "labelRobotCtrls";
-            this.labelRobotCtrls.Size = new System.Drawing.Size(129, 16);
+            this.labelRobotCtrls.Size = new System.Drawing.Size(147, 16);
             this.labelRobotCtrls.TabIndex = 59;
             this.labelRobotCtrls.Text = "ROBOT CONTROLS";
             this.labelRobotCtrls.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -799,7 +799,7 @@ namespace SDK_Example
             // labelRobotState
             // 
             this.labelRobotState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(240)))));
-            this.labelRobotState.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRobotState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRobotState.ForeColor = System.Drawing.Color.White;
             this.labelRobotState.Location = new System.Drawing.Point(776, 151);
             this.labelRobotState.Name = "labelRobotState";
@@ -807,6 +807,7 @@ namespace SDK_Example
             this.labelRobotState.TabIndex = 84;
             this.labelRobotState.Text = "No Robot";
             this.labelRobotState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelRobotState.Click += new System.EventHandler(this.labelRobotState_Click);
             // 
             // formScan2D
             // 

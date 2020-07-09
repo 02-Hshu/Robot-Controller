@@ -1052,5 +1052,156 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.Size">
+            <summary>Usb camera image size.</summary>
+        </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.Start">
+            <summary>Start.</summary>
+        </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.Stop">
+            <summary>Stop.</summary>
+        </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.Release">
+            <summary>Release resource.</summary>
+        </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.GetBitmap">
+            <summary>Get image.</summary>
+            <remarks>Immediately after starting, fails because image buffer is not prepared yet.</remarks>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.FindDevices">
+            <summary>
+            Get available USB camera list.
+            </summary>
+            <returns>Array of camera name, or if no device found, zero length array.</returns>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.GetVideoFormat(System.Int32)">
+            <summary>
+            Get video formats.
+            </summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.#ctor(System.Int32,System.Drawing.Size)">
+            <summary>
+            Create USB Camera. If device do not support the size, default size will applied.
+            </summary>
+            <param name="cameraIndex">Camera index in FindDevices() result.</param>
+            <param name="size">
+            Size you want to create. Normally use Size property of VideoFormat in GetVideoFormat() result.
+            </param>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.#ctor(System.Int32,GitHub.secile.Video.UsbCamera.VideoFormat)">
+            <summary>
+            Create USB Camera. If device do not support the format, default format will applied.
+            </summary>
+            <param name="cameraIndex">Camera index in FindDevices() result.</param>
+            <param name="format">
+            Normally use GetVideoFormat() result.
+            You can change TimePerFrame value from Caps.MinFrameInterval to Caps.MaxFrameInterval.
+            TimePerFrame = 10,000,000 / frame duration. (ex: 333333 in case 30fps).
+            You can change Size value in case Caps.MaxOutputSize > Caps.MinOutputSize and OutputGranularityX/Y is not zero.
+            Size = any value from Caps.MinOutputSize to Caps.MaxOutputSize step with OutputGranularityX/Y.
+            </param>
+        </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.Properties">
+            <summary>Properties user can adjust.</summary>
+        </member>
+        <member name="F:GitHub.secile.Video.UsbCamera.PropertyItems.CameraControl">
+            <summary>Camera Control properties.</summary>
+        </member>
+        <member name="F:GitHub.secile.Video.UsbCamera.PropertyItems.VideoProcAmp">
+            <summary>Video Processing Amplifier properties.</summary>
+        </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.PropertyItems.Item(GitHub.secile.Video.DirectShow.CameraControlProperty)">
+            <summary>Get CameraControl Property. Check Available before use.</summary>
+        </member>
+        <member name="P:GitHub.secile.Video.UsbCamera.PropertyItems.Item(GitHub.secile.Video.DirectShow.VideoProcAmpProperty)">
+            <summary>Get VideoProcAmp Property. Check Available before use.</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.GetBitmapFromSampleGrabberBuffer(GitHub.secile.Video.DirectShow.ISampleGrabber,System.Int32,System.Int32,System.Int32)">
+            <summary>Get Bitmap from Sample Grabber Current Buffer</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.GetBitmapFromSampleGrabberBufferMain(GitHub.secile.Video.DirectShow.ISampleGrabber,System.Int32,System.Int32,System.Int32)">
+            <summary>Get Bitmap from Sample Grabber Current Buffer</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.CreateSampleGrabber">
+            <summary>
+            サンプルグラバを作成する
+            </summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.CreateVideoCaptureSource(System.Int32,GitHub.secile.Video.UsbCamera.VideoFormat)">
+            <summary>
+            Video Capture Sourceフィルタを作成する
+            </summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.SetVideoOutputFormat(GitHub.secile.Video.DirectShow.IPin,GitHub.secile.Video.UsbCamera.VideoFormat)">
+            <summary>
+            ビデオキャプチャデバイスの出力形式を選択する。
+            </summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.GetVideoOutputFormat(GitHub.secile.Video.DirectShow.IPin)">
+            <summary>
+            ビデオキャプチャデバイスがサポートするメディアタイプ・サイズを取得する。
+            </summary>
+        </member>
+        <member name="M:GitHub.secile.Video.UsbCamera.SetVideoOutputFormat(GitHub.secile.Video.DirectShow.IPin,System.Int32,System.Drawing.Size,System.Int64)">
+            <summary>
+            ビデオキャプチャデバイスの出力形式を選択する。
+            事前にGetVideoOutputFormatでメディアタイプ・サイズを得ておき、その中から希望のindexを指定する。
+            同時に出力サイズとフレームレートを変更することができる。
+            </summary>
+            <param name="index">希望のindexを指定する</param>
+            <param name="size">Empty以外を指定すると出力サイズを変更する。事前にVIDEO_STREAM_CONFIG_CAPSで取得した可能範囲内を指定すること。</param>
+            <param name="timePerFrame">0以上を指定するとフレームレートを変更する。事前にVIDEO_STREAM_CONFIG_CAPSで取得した可能範囲内を指定すること。</param>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.CoCreateInstance(System.Guid)">
+            <summary>COMオブジェクトのインスタンスを作成する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.ReleaseInstance``1(``0@)">
+            <summary>COMオブジェクトのインスタンスを開放する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.CreateGraph">
+            <summary>フィルタグラフを作成する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.PlayGraph(GitHub.secile.Video.DirectShow.IGraphBuilder,GitHub.secile.Video.DirectShow.FILTER_STATE)">
+            <summary>フィルタグラフを再生・停止・一時停止する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.GetFiltes(System.Guid)">
+            <summary>フィルタの一覧を取得する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.CreateFilter(System.Guid)">
+            <summary>フィルタのインスタンスを作成する。CLSIDで指定する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.CreateFilter(System.Guid,System.Int32)">
+            <summary>フィルタのインスタンスを作成する。CategoryとIndexで指定する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.EnumMonikers(System.Guid,System.Func{System.Runtime.InteropServices.ComTypes.IMoniker,GitHub.secile.Video.DirectShow.IPropertyBag,System.Boolean})">
+            <summary>モニカを列挙する。</summary>
+            <remarks>モニカとはCOMオブジェクトを識別する別名のこと。</remarks>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.FindPin(GitHub.secile.Video.DirectShow.IBaseFilter,System.String)">
+            <summary>ピンを検索する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.FindPin(GitHub.secile.Video.DirectShow.IBaseFilter,System.Int32,GitHub.secile.Video.DirectShow.PIN_DIRECTION)">
+            <summary>ピンを検索する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.EnumPins(GitHub.secile.Video.DirectShow.IBaseFilter,System.Func{GitHub.secile.Video.DirectShow.PIN_INFO,System.Boolean})">
+            <summary>Pinを列挙する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.ConnectFilter(GitHub.secile.Video.DirectShow.IGraphBuilder,GitHub.secile.Video.DirectShow.IBaseFilter,System.Int32,GitHub.secile.Video.DirectShow.IBaseFilter,System.Int32)">
+            <summary>ピンを接続する。</summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.DeleteMediaType(GitHub.secile.Video.DirectShow.AM_MEDIA_TYPE@)">
+            <summary>メディアタイプを開放する。</summary>
+        </member>
+        <member name="T:GitHub.secile.Video.DirectShow.IEnumFilters">
+            <summary>
+            フィルタ グラフ内のフィルタを列挙するインタフェース.
+            </summary>
+        </member>
+        <member name="M:GitHub.secile.Video.DirectShow.DsGuid.GetNickname(System.Guid)">
+            <summary>
+            Guidをわかりやすい文字列で返す。
+            MEDIATYPE_Videoなら[Video]を返す。PIN_CATEGORY_CAPTUREなら[CATEGORY_CAPTURE]を返す。
+            </summary>
+        </member>
     </members>
 </doc>

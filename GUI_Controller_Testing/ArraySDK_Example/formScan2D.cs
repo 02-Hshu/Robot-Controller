@@ -20,6 +20,8 @@ using ArraySDK_Example.Properties;
 using Microsoft.Win32;
 using System.Text.RegularExpressions;
 using ArraySDK_Example;
+using DarrenLee.Media;
+using GitHub.secile.Video;
 
 namespace SDK_Example
 {
@@ -61,7 +63,7 @@ namespace SDK_Example
         uint uiNbOfLines = 0;
         int iCfmSamples = 0;
 
-   
+
 
         /// <summary>
         /// pass by reference to the dll
@@ -712,7 +714,7 @@ namespace SDK_Example
             {
                 // labelFR.Text = strFR + MyHwControls.GetProbeFrameRate().ToString();
                 // if (bIdle == false) //---- cannot get the property if there is no probe
-                    // labelCompound.Text = strCompound + MyHwControls.CompoundAngle.ToString();
+                // labelCompound.Text = strCompound + MyHwControls.CompoundAngle.ToString();
             }
 
             // labelSteering.Text = strSteering + iSteering.ToString();
@@ -775,7 +777,7 @@ namespace SDK_Example
             }
 
         }
-       
+
         /// <summary>
         /// To initialize the PlusMinus controls
         /// </summary>
@@ -820,7 +822,7 @@ namespace SDK_Example
             buttonSaveCine.Enabled = false;
 
             StopCineloop();
-            try { 
+            try {
                 Scan2D.NewImageTick -= new IntersonArray.Imaging.Capture.NewImageHandler(ImageRefresh); //Image Ready to be displayed
                 MyHwControls.DisableHardButton();
                 MyHwControls.HWButtonTick -= new HWControls.HWButtonHandler(WatchHWButton);
@@ -1523,11 +1525,11 @@ namespace SDK_Example
                 {
                     Array.Copy(bytRawImage, bytRawImagePrevious, uiNbOfLines * ScanConverter.MAX_SAMPLES);
                     Array.Copy(bytRawImageRef, bytRawImage, uiNbOfLines * ScanConverter.MAX_SAMPLES);
-                    
+
                     // if (RobotState == RobotStateEnum.scanning)
                     // {
-                        // Console.WriteLine("prevStepPos: " + prevStepPos);
-                        // Console.WriteLine("curStepPos: " + curStepPos);
+                    // Console.WriteLine("prevStepPos: " + prevStepPos);
+                    // Console.WriteLine("curStepPos: " + curStepPos);
                     // }
 
                     if (prevStepPos < curStepPos) {
@@ -1537,12 +1539,17 @@ namespace SDK_Example
                         // }
                         AddToCine(bytRawImage); // Takes a scan every step
                         prevStepPos++;
-                        
+
+                        if (hasUsbCamera == true && curStepPos % 10 == 0) {
+                            Console.WriteLine(curStepPos);
+                            SaveCameraImage();
+                        }
+
                         // count_loop++;
                         // if (RobotState == RobotStateEnum.scanning)
                         // {
-                            // Console.WriteLine("prevStepPos: " + prevStepPos);
-                            // Console.WriteLine("curStepPos: " + curStepPos);
+                        // Console.WriteLine("prevStepPos: " + prevStepPos);
+                        // Console.WriteLine("curStepPos: " + curStepPos);
                         // }
                     }
                     ApplyTgc(bytRawImage);      //B
@@ -1704,6 +1711,61 @@ namespace SDK_Example
             }
         }
 
+
+        #endregion
+
+        #region USB CAMERA
+
+        UsbCamera myCamera;
+        Boolean hasUsbCamera = false;
+        List<Bitmap> cameraPictures = new List<Bitmap>(); 
+
+        // Returns the number of cameras found and sets hasCamera to true if a USBCamera has been found
+        private int GetCameraInfo() {
+            string[] devices = UsbCamera.FindDevices();
+
+            if (devices.Length > 1) {
+                hasUsbCamera = true;
+            }
+
+            Console.WriteLine("Number of cameras caught: " + devices.Length);
+
+            return devices.Length;
+        }
+
+        // Starts camera, and initializes cameraPictures to List<Bitmap>
+        private void StartCamera() {
+            int cameraIndex = 1;
+            UsbCamera.VideoFormat[] formats = UsbCamera.GetVideoFormat(cameraIndex);
+
+            // for (int i = 0; i < formats.Length; i++) Console.WriteLine("{0}:{1}", i, formats[i]);
+
+            Console.WriteLine("format 0: " + formats[0]);
+            Console.WriteLine("format 1: " + formats[1]);
+
+            myCamera = new UsbCamera(cameraIndex, formats[0]);
+            myCamera.Start();
+
+            cameraPictures = new List<Bitmap>();
+        }
+
+        // Saves the camera image
+        private void SaveCameraImage() {
+            Bitmap picture = myCamera.GetBitmap();
+            cameraPictures.Add(picture);
+
+            if (picture == null) {
+                Console.WriteLine("Error in capturing image");
+            }
+
+            Console.WriteLine("Camera pic taken: " + cameraPictures.Count);
+        }
+
+        // Stops the camera, clears cameraPictures, and sets hasUsbCamera to false
+        private void StopCamera() {
+            myCamera.Stop();
+            hasUsbCamera = false;
+        }
 
         #endregion
 
@@ -3570,8 +3632,11 @@ namespace SDK_Example
                     labelRobotState.Text = "Ready to Scan";
                     robotStateIndicator.Load("Images/readyToScan.png");
 
-                    // FormCamera cam = new FormCamera();
-
+                    GetCameraInfo();
+                    if (hasUsbCamera == true) {
+                        StartCamera();
+                        Console.WriteLine("Camera started!");
+                    }
                     break;
                 case RobotStateEnum.homing:
                     buttonRobotScan.Enabled = true;
@@ -3587,6 +3652,9 @@ namespace SDK_Example
                     buttonRobotScan.Enabled = true;
                     labelRobotState.Text = "End of Travel";
                     robotStateIndicator.Load("Images/endOfTravel.png");
+
+                    if (hasUsbCamera == true)
+                        StopCamera();
 
                     // Console.WriteLine("# of times prevStepPos < curStepPos: " + count_loop);
                     // count_loop = 0;
@@ -3859,6 +3927,13 @@ namespace SDK_Example
                                 i);
 
             }
+
+            // Saves the camera images
+            for (int i = 0; i < cameraPictures.Count; i++) {
+                cameraPictures[i].Save(bmpPath + '/' + "Image_" + (i + 1) * 10 + ".Bmp", ImageFormat.Bmp);
+                Console.WriteLine("Saved a camera image");
+            }
+            cameraPictures.Clear();
         }
 
 
@@ -4831,6 +4906,11 @@ namespace SDK_Example
             StopCineloop();
             iCineCounter = protoTrackBarCine.Value;
             CineloopSlide();
+        }
+
+        private void labelRobotState_Click(object sender, EventArgs e)
+        {
+
         }
     }
     #endregion

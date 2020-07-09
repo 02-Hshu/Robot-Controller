@@ -51,6 +51,7 @@ namespace ArraySDK_Example
 
         private void CmbCameraDevices_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Console.WriteLine(cmbCameraDevices.SelectedIndex);
             myCamera.ChangeCamera(cmbCameraDevices.SelectedIndex);
         }
 

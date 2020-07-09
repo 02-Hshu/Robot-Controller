@@ -6,7 +6,7 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{CFD817E9-4D9F-47B2-B401-4F03E25268A8}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ArraySDK_Example</RootNamespace>
     <AssemblyName>ArraySDK_Example</AssemblyName>
@@ -182,6 +182,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UsbCamera.cs" />
     <Compile Include="UserControlDepth.cs">
       <SubType>UserControl</SubType>
     </Compile>
