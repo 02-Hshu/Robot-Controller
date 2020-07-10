@@ -209,6 +209,11 @@
             this for communicating with SerialPort
             </summary>
         </member>
+        <member name="F:SDK_Example.formScan2D.hasProbe">
+            <summary>
+            Checks if the robot has the probe
+            </summary>
+        </member>
         <member name="F:SDK_Example.formScan2D.astrSC">
             <summary>
             Define the choices of the sizes of the Scan Converter

@@ -293,6 +293,10 @@ namespace SDK_Example
         // this for receiving data from the Serial Port
         byte[] ReceivedBytes = new Byte[1];
 
+        /// <summary>
+        /// Checks if the robot has the probe
+        /// </summary>
+        Boolean hasProbe = false;
 
         enum RobotStateEnum
         {
@@ -404,12 +408,12 @@ namespace SDK_Example
 
             StringCollection mycolProbesName = new StringCollection();
 
-            try
-            {
+            try { // Finds the probe and starts it
                 HWControls controls = new HWControls();
                 controls.FindAllProbes(ref mycolProbesName);
                 controls.FindMyProbe(0);
 
+                // Sets the probe and starts the robot
                 SetSelectedProbe();
 
                 // Starts scanning immediately after probe has been selected
@@ -421,7 +425,17 @@ namespace SDK_Example
                 ScanConverter.Doubler = !ScanConverter.Doubler;
                 SetDoubler();
                 RebuildAll();
+
+                hasProbe = true;
+
             } catch (ArgumentOutOfRangeException error) {
+                ///Robot initialization 
+                // Might have to remove this
+                RobotState = RobotStateEnum.disConnected;
+                SetButtonForRobotState(RobotState);
+                EnableRobotConnectTimer();
+
+                hasProbe = false;
             }
 
         }
@@ -1765,6 +1779,7 @@ namespace SDK_Example
         private void StopCamera() {
             myCamera.Stop();
             hasUsbCamera = false;
+            Console.WriteLine("Camera Stopped!");
         }
 
         #endregion
@@ -3666,7 +3681,8 @@ namespace SDK_Example
                     robotStateIndicator.Load("Images/emergencyStopped.png");
                     break;
                 case RobotStateEnum.rewinding:
-                    StartScan();
+                    if (hasProbe == true)
+                        StartScan();
                     buttonRobotScan.Enabled = true;
                     labelRobotState.Text = "Rewinding";
                     robotStateIndicator.Load("Images/rewinding.png");
