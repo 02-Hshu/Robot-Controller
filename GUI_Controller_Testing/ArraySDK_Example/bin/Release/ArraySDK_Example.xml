@@ -885,6 +885,12 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "F:SDK_Example.formScan2D.baseFileName" -->
+        <member name="M:SDK_Example.formScan2D.SaveCameraPictures(System.String)">
+            <summary>
+            Saves the array of camera images if the array's size is greater than 0
+            </summary>
+            <param name="bmpPath"></param>
+        </member>
         <member name="M:SDK_Example.formScan2D.DoSaveRobotScanDataAsText(System.String)">
             <summary>
             Saves a .txt file that has the values used for Depth, Frequency, High Voltage, Main Gain, Dynamic, Etc

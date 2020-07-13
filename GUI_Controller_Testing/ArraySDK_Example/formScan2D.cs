@@ -3869,6 +3869,7 @@ namespace SDK_Example
             String bmpPath = null;
             String jpgPath = null;
             String rawPath = null;
+            String path = null;
 
             // prompt user for file folder
             using (var fbd = new FolderBrowserDialog())
@@ -3883,7 +3884,7 @@ namespace SDK_Example
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-                    string path = fbd.SelectedPath + Path.DirectorySeparatorChar + folderName;
+                    path = fbd.SelectedPath + Path.DirectorySeparatorChar + folderName;
 
                     Directory.CreateDirectory(path);
 
@@ -3944,9 +3945,23 @@ namespace SDK_Example
 
             }
 
-            // Saves the camera images
-            for (int i = 0; i < cameraPictures.Count; i++) {
-                cameraPictures[i].Save(bmpPath + '/' + "Image_" + (i + 1) * 10 + ".Bmp", ImageFormat.Bmp);
+            SaveCameraPictures(path);
+        }
+
+        /// <summary>
+        /// Saves the array of camera images if the array's size is greater than 0
+        /// </summary>
+        /// <param name="bmpPath"></param>
+        private void SaveCameraPictures(String path) {
+            String pathPictures = path + "/" + "Usb_Camera_Pictures";
+
+            if (cameraPictures.Count > 0) {
+                Directory.CreateDirectory(pathPictures);
+            }
+
+            for (int i = 0; i < cameraPictures.Count; i++)
+            {
+                cameraPictures[i].Save(pathPictures + '/' + "Image_" + (i + 1) * 10 + ".Bmp", ImageFormat.Bmp);
                 Console.WriteLine("Saved a camera image");
             }
             cameraPictures.Clear();
