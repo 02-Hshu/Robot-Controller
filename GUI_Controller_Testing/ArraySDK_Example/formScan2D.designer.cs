@@ -625,6 +625,7 @@ namespace SDK_Example
             this.robotStateIndicator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.robotStateIndicator.TabIndex = 78;
             this.robotStateIndicator.TabStop = false;
+            this.robotStateIndicator.Click += new System.EventHandler(this.ProtoButtonRobotScan_Click);
             // 
             // protoTBarTgc1
             // 
@@ -807,7 +808,7 @@ namespace SDK_Example
             this.labelRobotState.TabIndex = 84;
             this.labelRobotState.Text = "No Robot";
             this.labelRobotState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRobotState.Click += new System.EventHandler(this.labelRobotState_Click);
+            this.labelRobotState.Click += new System.EventHandler(this.ProtoButtonRobotScan_Click);
             // 
             // formScan2D
             // 
