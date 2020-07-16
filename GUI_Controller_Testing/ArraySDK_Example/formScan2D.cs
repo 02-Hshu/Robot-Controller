@@ -26,7 +26,21 @@ using GitHub.secile.Video;
 namespace SDK_Example
 {
     /// <summary>
-    /// represents the Main Form to display the US image.
+    /// Represents the Main Form to display the ultrasound image, and contains code that deals with communication between the GUI controller and the robot.
+    /// When the robot is turned on and the program is started, the program checks if the robot is connected through a serial port, and if there is a robot,
+    /// the robot starts homing. The robot sends specific codes to the program while it is homing, rewinding, and scanning. When the robot is scanning, the robot
+    /// sends a code to this program everytime it takes a step, and each time the robot takes a step, this program tells the the probe to take a scan. If there is a usb
+    /// camera attached, the camera will take a picture every 10 scans that the probe takes. After a scan is complete, the user can choose where to save the cine 
+    /// loop and camera images.
+    /// 
+    /// Robot codes and corresponding functions carried about by this program:
+    /// 0x4D: Tells the GUI Controller that the robot is ready to scan
+    /// 0x40: Tells the GUI Controller that the robot is connected to the computer
+    /// 0x47: Tells the GUI Controller that the robot has emergency stopped
+    /// 0x42: Tells the GUI Controller to start counting the steps during the 2nd part of the homing phase
+    /// 0x41: Tells the GUI Controller to stop counting the steps and store that count as MaxSteps which will later be used to set the size of the Array holding all of the scans
+    /// 0x4B: Tells the GUI Controller that the scan is completed
+    /// 0x50: Tells the GUI Controller that we finished taking a step
     /// </summary>
     public partial class formScan2D : Form
     {
@@ -1250,6 +1264,7 @@ namespace SDK_Example
             UpdateLabels();
         }
         #endregion
+        
         #region DEPTH
         /// <summary>
         /// To increase the Depth
@@ -1273,6 +1288,7 @@ namespace SDK_Example
             RebuildScanConverter();
         }
         #endregion
+        
         #region FREQUENCY and FOCUS
         void UpdateFrequencyAndFocus()
         {
@@ -1351,6 +1367,7 @@ namespace SDK_Example
         }
 
         #endregion
+        
         #region HIGHVOLTAGE
         /// <summary>
         /// To increase the High Voltage
@@ -1379,6 +1396,7 @@ namespace SDK_Example
         }
 
         #endregion
+        
         #region IMAGESPER
         /// <summary>
         /// To increase the High Voltage
@@ -1403,6 +1421,7 @@ namespace SDK_Example
             //UpdateLabels();
         }
         #endregion
+        
         #region STEERING
         private void SteeringPlus()
         {
@@ -1421,6 +1440,7 @@ namespace SDK_Example
         }
 
         #endregion
+        
         #region DOUBLER
         private void butDoubler_Click(object sender, EventArgs e)
         {
@@ -1447,6 +1467,7 @@ namespace SDK_Example
             }
         }
         #endregion
+        
         #region COMPOUND
         private void butCompound_Click(object sender, EventArgs e)
         {
@@ -1729,12 +1750,24 @@ namespace SDK_Example
         #endregion
 
         #region USB CAMERA
+        /// <summary>
+        /// Deals with  the Usb Camera. 
+        /// 
+        /// GetCameraInfo gets called when the robot is in the state "ready to scan", and if the program
+        /// recognizes two or more cameras attached (two or more because assuming that a laptop is used,
+        /// the laptop will likely have a built in camera), StartCamera gets called.
+        /// 
+        /// Camera images are written to files in DoSaveRobotScan().
+        /// </summary>
 
         UsbCamera myCamera;
         Boolean hasUsbCamera = false;
         List<Bitmap> cameraPictures = new List<Bitmap>(); 
 
-        // Returns the number of cameras found and sets hasCamera to true if a USBCamera has been found
+        /// <summary>
+        /// Returns the number of cameras found and sets hasUsbCamera to true if a Usb Camera has been found.
+        /// </summary>
+        /// <returns> An int of how many cameras the program has found </returns>
         private int GetCameraInfo() {
             string[] devices = UsbCamera.FindDevices();
 
@@ -1747,7 +1780,12 @@ namespace SDK_Example
             return devices.Length;
         }
 
-        // Starts camera, and initializes cameraPictures to List<Bitmap>
+        /// <summary>
+        /// Starts camera, and initializes cameraPictures to list<Bitmap>. This assumes that the UsbCamera
+        /// is the second camera in the list of cameras that this program as found. It chooses the second one
+        /// since if a laptop is used to run this program, the first camera (zero-indexed) will be the 
+        /// built-in camera. 
+        /// </summary>
         private void StartCamera() {
             int cameraIndex = 1;
             UsbCamera.VideoFormat[] formats = UsbCamera.GetVideoFormat(cameraIndex);
@@ -1763,7 +1801,10 @@ namespace SDK_Example
             cameraPictures = new List<Bitmap>();
         }
 
-        // Saves the camera image
+        /// <summary>
+        /// "Saves" the camera image by adding the image to the list cameraPictures. The images are written
+        /// to file in DoSaveRobotScan()
+        /// </summary>
         private void SaveCameraImage() {
             Bitmap picture = myCamera.GetBitmap();
             cameraPictures.Add(picture);
@@ -1775,7 +1816,9 @@ namespace SDK_Example
             Console.WriteLine("Camera pic taken: " + cameraPictures.Count);
         }
 
-        // Stops the camera, clears cameraPictures, and sets hasUsbCamera to false
+        /// <summary>
+        /// Stops the camera, clears the list cameraPictures, and sets hasUsbCamera to false
+        /// </summary>
         private void StopCamera() {
             myCamera.Stop();
             hasUsbCamera = false;
@@ -4945,4 +4988,5 @@ namespace SDK_Example
         }
     }
     #endregion
+
 }///namespace SDK_EXAMPLE
