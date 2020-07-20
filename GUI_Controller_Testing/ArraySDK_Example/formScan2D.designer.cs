@@ -94,6 +94,7 @@ namespace SDK_Example
             this.uctrlScan = new SDK_Example.UserControlScan();
             this.protoTrackBarCine = new TrackBar.Dotnetrix.Controls.TrackBar();
             this.labelRobotState = new System.Windows.Forms.Label();
+            this.cmbSelectLimb = new System.Windows.Forms.ComboBox();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
@@ -353,7 +354,7 @@ namespace SDK_Example
             this.labelPosition.AutoSize = true;
             this.labelPosition.BackColor = System.Drawing.Color.Transparent;
             this.labelPosition.ForeColor = System.Drawing.Color.White;
-            this.labelPosition.Location = new System.Drawing.Point(1002, 178);
+            this.labelPosition.Location = new System.Drawing.Point(1002, 187);
             this.labelPosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPosition.Name = "labelPosition";
             this.labelPosition.Size = new System.Drawing.Size(44, 13);
@@ -523,7 +524,7 @@ namespace SDK_Example
             // 
             this.butManRev.BackColor = System.Drawing.Color.Transparent;
             this.butManRev.Image = ((System.Drawing.Image)(resources.GetObject("butManRev.Image")));
-            this.butManRev.Location = new System.Drawing.Point(906, 141);
+            this.butManRev.Location = new System.Drawing.Point(906, 150);
             this.butManRev.Name = "butManRev";
             this.butManRev.Size = new System.Drawing.Size(78, 90);
             this.butManRev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -536,7 +537,7 @@ namespace SDK_Example
             // 
             this.protoButManFwd.BackColor = System.Drawing.Color.Transparent;
             this.protoButManFwd.Image = ((System.Drawing.Image)(resources.GetObject("protoButManFwd.Image")));
-            this.protoButManFwd.Location = new System.Drawing.Point(1049, 141);
+            this.protoButManFwd.Location = new System.Drawing.Point(1049, 150);
             this.protoButManFwd.Name = "protoButManFwd";
             this.protoButManFwd.Size = new System.Drawing.Size(78, 90);
             this.protoButManFwd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -810,6 +811,22 @@ namespace SDK_Example
             this.labelRobotState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelRobotState.Click += new System.EventHandler(this.ProtoButtonRobotScan_Click);
             // 
+            // cmbSelectLimb
+            // 
+            this.cmbSelectLimb.FormattingEnabled = true;
+            this.cmbSelectLimb.Items.AddRange(new object[] {
+            "Achilles Tendon",
+            "Front Elbow",
+            "Back Elbow",
+            "Hand",
+            "Bottom of Foot",
+            "Top of Foot"});
+            this.cmbSelectLimb.Location = new System.Drawing.Point(906, 123);
+            this.cmbSelectLimb.Name = "cmbSelectLimb";
+            this.cmbSelectLimb.Size = new System.Drawing.Size(220, 21);
+            this.cmbSelectLimb.TabIndex = 85;
+            this.cmbSelectLimb.Text = "Select a Limb";
+            // 
             // formScan2D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -818,6 +835,7 @@ namespace SDK_Example
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(63)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1170, 806);
+            this.Controls.Add(this.cmbSelectLimb);
             this.Controls.Add(this.labelRobotState);
             this.Controls.Add(this.protoTrackBarCine);
             this.Controls.Add(this.protoTrackBarRobotSpeed);
@@ -968,6 +986,7 @@ namespace SDK_Example
         private TrackBar.Dotnetrix.Controls.TrackBar protoTrackBarRobotSpeed;
         private TrackBar.Dotnetrix.Controls.TrackBar protoTrackBarCine;
         private Label labelRobotState;
+        private ComboBox cmbSelectLimb;
     }
 }
 

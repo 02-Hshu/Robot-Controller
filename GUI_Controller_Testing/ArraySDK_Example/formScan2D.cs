@@ -415,6 +415,8 @@ namespace SDK_Example
         /// <param name="e"></param>
         private void formScan2D_Load(object sender, EventArgs e)
         {
+            cmbSelectLimb.Text = "Select a limb";
+
             // Sets the focus on labelTgc so that textRadius isn't focused
             this.ActiveControl = labelTgc;
 
@@ -4025,8 +4027,8 @@ namespace SDK_Example
             using (System.IO.StreamWriter file =
                 new System.IO.StreamWriter(filePath))
             {
-                file.WriteLine("Index " + iIndexSC);
-                file.WriteLine("Depth " + iDepth);
+                file.WriteLine("Index: " + iIndexSC);
+                file.WriteLine("Depth: " + iDepth);
 
                 // Main button settings 
                 String freq = Regex.Replace(labelFrequency.Text, "[^0-9.+-]", "");
@@ -4058,6 +4060,7 @@ namespace SDK_Example
                 file.WriteLine("Width: " + aiWidth[iIndexSC]);
                 file.WriteLine("Height: " + aiHeigth[iIndexSC]);
                 file.WriteLine("Number_Images: " + ByteArrayList.Count);
+                file.WriteLine("Limb: " + cmbSelectLimb.Text);
 
                 // Sweep angle
                 int stepsPerTick = 10;

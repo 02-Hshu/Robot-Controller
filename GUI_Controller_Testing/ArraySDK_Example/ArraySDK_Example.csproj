@@ -105,12 +105,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCamera.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCamera.Designer.cs">
-      <DependentUpon>FormCamera.cs</DependentUpon>
-    </Compile>
     <Compile Include="formFoot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,9 +126,6 @@
     <Compile Include="MessageClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormCamera.resx">
-      <DependentUpon>FormCamera.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formFoot.resx">
       <DependentUpon>formFoot.cs</DependentUpon>
     </EmbeddedResource>
